@@ -1,0 +1,37 @@
+have_type: checking for u_int8_t... -------------------- yes
+
+"clang -o conftest -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include/ruby-2.7.0/arm64-darwin21 -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include/ruby-2.7.0 -I. -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe conftest.c  -L. -L/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/lib -L. -L/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/lib  -fstack-protector-strong  -m64   -lruby.2.7   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"clang -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include/ruby-2.7.0/arm64-darwin21 -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include/ruby-2.7.0 -I. -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: typedef u_int8_t conftest_type;
+5: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_header: checking for sys/cdefs.h... -------------------- yes
+
+"clang -E -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include/ruby-2.7.0/arm64-darwin21 -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include/ruby-2.7.0 -I. -I/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/cdefs.h>
+/* end */
+
+--------------------
+

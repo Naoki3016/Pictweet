@@ -1,0 +1,16 @@
+current directory: /Users/odanaoki/NAOKI/プログラミング/TechMaster/techmaster/projects/PicTweet/vendor/bundle/ruby/2.7.0/gems/strscan-3.0.1/ext/strscan
+/Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/bin/ruby -I /Users/odanaoki/.anyenv/envs/rbenv/versions/2.7.5/lib/ruby/2.7.0 -r ./siteconf20220228-59783-5veqbm.rb extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/odanaoki/NAOKI/プログラミング/TechMaster/techmaster/projects/PicTweet/vendor/bundle/ruby/2.7.0/gems/strscan-3.0.1/ext/strscan
+make "DESTDIR=" clean
+
+current directory: /Users/odanaoki/NAOKI/プログラミング/TechMaster/techmaster/projects/PicTweet/vendor/bundle/ruby/2.7.0/gems/strscan-3.0.1/ext/strscan
+make "DESTDIR="
+compiling strscan.c
+linking shared-object strscan.bundle
+
+current directory: /Users/odanaoki/NAOKI/プログラミング/TechMaster/techmaster/projects/PicTweet/vendor/bundle/ruby/2.7.0/gems/strscan-3.0.1/ext/strscan
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20220228-59783-18iod4g
